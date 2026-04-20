@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
 use HackerRank\Practice\Algorithms\Warmup\DiagonalDifference;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(DiagonalDifference::class)]
 class DiagonalDifferenceTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldCalcDiagonalDifference(): void
     {
         $sut = new DiagonalDifference();

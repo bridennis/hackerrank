@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
 use HackerRank\Practice\Algorithms\Warmup\TimeConversion;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(TimeConversion::class)]
 final class TimeConversionTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldConvertTime(): void
     {
         $sut = new TimeConversion();

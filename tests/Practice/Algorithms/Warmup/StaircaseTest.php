@@ -2,12 +2,16 @@
 
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
+use HackerRank\Practice\Algorithms\Warmup\BirthdayCakeCandles;
 use HackerRank\Practice\Algorithms\Warmup\Staircase;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(Staircase::class)]
 class StaircaseTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldDrawStaircase(): void
     {
         $sut = new Staircase();

@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
 use HackerRank\Practice\Algorithms\Warmup\BirthdayCakeCandles;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(BirthdayCakeCandles::class)]
 final class BirthdayCakeCandlesTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldCalcHighestCandles(): void
     {
         $sut = new BirthdayCakeCandles();

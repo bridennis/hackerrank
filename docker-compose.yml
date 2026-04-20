@@ -1,0 +1,8 @@
+services:
+  php:
+    container_name: php
+    image: php:8.5-fpm-alpine
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "80:80"

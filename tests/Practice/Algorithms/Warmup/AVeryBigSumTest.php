@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
 use HackerRank\Practice\Algorithms\Warmup\AVeryBigSum;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(AVeryBigSum::class)]
 final class AVeryBigSumTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldSumBigNumbers(): void
     {
         $sut = new AVeryBigSum();

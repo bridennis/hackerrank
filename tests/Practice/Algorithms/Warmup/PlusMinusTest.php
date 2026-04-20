@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace HackerRank\Tests\Practice\Algorithms\Warmup;
 
 use HackerRank\Practice\Algorithms\Warmup\PlusMinus;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(PlusMinus::class)]
 class PlusMinusTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function itShouldCalcPlusMinus(): void
     {
         $sut = new PlusMinus();
